@@ -1,18 +1,18 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Supervoid Gatsby Rebuild",
+    siteUrl: 'https://www.yourdomain.tld',
+    title: 'Supervoid Gatsby Rebuild',
   },
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-gatsby-cloud",
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-gatsby-cloud',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "",
+        trackingId: 'add ID # here',
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
   ],
 };
