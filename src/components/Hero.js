@@ -4,11 +4,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroStyles = styled.video`
-  /* position: fixed;
-  right: 0;
-  bottom: 0; */
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
 `;
 
 const Hero = ({ data }) => {

@@ -10,6 +10,13 @@ import nextFab from '../assets/gifs/nextFab.mp4';
 import grid from '../assets/gifs/grid.mp4';
 import workingOnDying from '../assets/gifs/working-on-dying.mp4';
 import discoBiscuits from '../assets/gifs/discobiscuits.mp4';
+import spotifyCanvases from '../assets/gifs/spotify-canvases.mp4';
+import notchMercuryOne from '../assets/gifs/notch-mercury1.mp4';
+import notchGnarbot from '../assets/gifs/notch-gnarbot.mp4';
+import notchMercuryTwo from '../assets/gifs/notch-mercury2.mp4';
+import previzOne from '../assets/gifs/previz-1.mp4';
+import previzTwo from '../assets/gifs/previz-2.mp4';
+import previzThree from '../assets/gifs/previz-3.mp4';
 
 // Projects data
 export const data = [
@@ -90,5 +97,47 @@ export const data = [
     type: 'project',
     title: '',
     url: `${discoBiscuits}`,
+  },
+  {
+    id: 13,
+    type: 'project',
+    title: '',
+    url: `${spotifyCanvases}`,
+  },
+  {
+    id: 14,
+    type: 'project',
+    title: '',
+    url: `${notchMercuryOne}`,
+  },
+  {
+    id: 15,
+    type: 'project',
+    title: '',
+    url: `${notchGnarbot}`,
+  },
+  {
+    id: 16,
+    type: 'project',
+    title: '',
+    url: `${notchMercuryTwo}`,
+  },
+  {
+    id: 17,
+    type: 'project',
+    title: '',
+    url: `${previzOne}`,
+  },
+  {
+    id: 18,
+    type: 'project',
+    title: '',
+    url: `${previzTwo}`,
+  },
+  {
+    id: 19,
+    type: 'project',
+    title: '',
+    url: `${previzThree}`,
   },
 ];
