@@ -1,4 +1,4 @@
-import TDBLive from '../assets/gifs/TDBLive.mp4';
+import TDBLive from '../assets/gifs/TDBlive.mp4';
 import horrendous from '../assets/gifs/horrendous.mp4';
 import rover from '../assets/gifs/multicam-rover.mp4';
 import changes from '../assets/gifs/music-videos-changes.mp4';
@@ -6,7 +6,7 @@ import cheebot from '../assets/gifs/cheebot.mp4';
 import coldSweat from '../assets/gifs/music-videos-cold-sweat.mp4';
 import adroit from '../assets/gifs/adroit.mp4';
 import marshall from '../assets/gifs/marshall.mp4';
-import nextFab from '../assets/gifs/nextFab.mp4';
+import nextFab from '../assets/gifs/nextfab.mp4';
 import grid from '../assets/gifs/grid.mp4';
 import workingOnDying from '../assets/gifs/working-on-dying.mp4';
 import discoBiscuits from '../assets/gifs/discobiscuits.mp4';
