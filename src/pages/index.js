@@ -1,24 +1,19 @@
 import React from 'react';
+import { data } from '../assets/data';
+
+// Styles
 import 'normalize.css';
+
+// Components
 import Layout from '../components/Layout';
-// import MainVideo from '../assets/gifs/horrendous.mp4';
+import Hero from '../components/Hero';
+import ProjectContainer from '../components/ProjectContainer';
 
-// Add all video data here
-const data = [
-  {
-    title: '',
-    url: '',
-    // etc.
-  },
-];
-
-// https://github.com/gatsbyjs/gatsby/blob/master/examples/using-video/src/pages/index.js
 const IndexPage = () => {
   return (
     <Layout>
-      {/* <video style={{ width: `100%` }} autoPlay loop>
-        <source src={MainVideo} type='video/mp4' />
-      </video> */}
+      <Hero data={data} />
+      <ProjectContainer data={data} />
     </Layout>
   );
 };

@@ -5,10 +5,6 @@ const GlobalStyles = createGlobalStyle`
         ${'' /* Colors */}
         ${'' /* Font Sizes */}
     }
-    * {
-        background: black;
-        color: white;
-    }
 `;
 
 export default GlobalStyles;
