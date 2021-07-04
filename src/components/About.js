@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import LazyLoad from 'react-lazyload';
 
 const AboutStyles = styled.div`
   display: flex;
@@ -31,20 +32,22 @@ const AboutStyles = styled.div`
 
 const About = () => {
   return (
-    <AboutStyles id='about'>
-      <h2>About</h2>
-      <p>
-        SUPERVOID is a visual design team that creates surreal mixed media
-        content and directs videos for artists and brands looking to stand out
-        on stage and on screen.
-      </p>
-      <h3>Contact Us</h3>
-      <div className='social-icon--container'>
-        <InstagramIcon className='social-icon' />
-        <FacebookIcon className='social-icon' />
-        <TwitterIcon className='social-icon' />
-      </div>
-    </AboutStyles>
+    <LazyLoad height={200}>
+      <AboutStyles id='about'>
+        <h2>About</h2>
+        <p>
+          SUPERVOID is a visual design team that creates surreal mixed media
+          content and directs videos for artists and brands looking to stand out
+          on stage and on screen.
+        </p>
+        <h3>Contact Us</h3>
+        <div className='social-icon--container'>
+          <InstagramIcon className='social-icon' />
+          <FacebookIcon className='social-icon' />
+          <TwitterIcon className='social-icon' />
+        </div>
+      </AboutStyles>
+    </LazyLoad>
   );
 };
 
