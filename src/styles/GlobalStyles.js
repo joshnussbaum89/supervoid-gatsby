@@ -5,8 +5,8 @@ const GlobalStyles = createGlobalStyle`
         ${'' /* Colors */}
         --bg-primary: #050505;
         --text-primary: #f2f2f2;
-        --accent-primary: #03dac5;
-        --accent-secondary: #3700b3;
+        --accent-primary: #3700b3;
+        --accent-secondary: #03dac5;
         
         ${'' /* Font Sizes */}
         --medium: 1.5rem;

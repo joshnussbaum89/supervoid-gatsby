@@ -1,12 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const AboutStyles = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   height: 100vh;
-  margin: 0 2rem;
+  width: 80vw;
+  margin: 0 1rem;
+  padding: 1rem;
+
+  .social-icon--container {
+    padding: 1rem 0;
+  }
+  .social-icon {
+    fill: var(--accent-secondary);
+    font-size: var(--large);
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 2rem;
+  }
 `;
 
 const About = () => {
@@ -18,6 +38,12 @@ const About = () => {
         content and directs videos for artists and brands looking to stand out
         on stage and on screen.
       </p>
+      <h3>Contact Us</h3>
+      <div className='social-icon--container'>
+        <InstagramIcon className='social-icon' />
+        <FacebookIcon className='social-icon' />
+        <TwitterIcon className='social-icon' />
+      </div>
     </AboutStyles>
   );
 };
