@@ -32,7 +32,7 @@ const ProjectContainer = ({ data }) => {
   const firstProjects = firstSixProjects.map((projectItem) => {
     return (
       <Project
-        index={projectItem.id}
+        key={projectItem.id}
         type={projectItem.type}
         title={projectItem.title}
         url={projectItem.url}
@@ -43,7 +43,7 @@ const ProjectContainer = ({ data }) => {
   const lastProjects = projectsAfterBio.map((projectItem) => {
     return (
       <Project
-        index={projectItem.id}
+        key={projectItem.id}
         type={projectItem.type}
         title={projectItem.title}
         url={projectItem.url}

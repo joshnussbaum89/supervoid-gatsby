@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 const ProjectStyles = styled.video`
   display: inline-block;
@@ -8,9 +9,11 @@ const ProjectStyles = styled.video`
 
 const Project = ({ index, type, title, url }) => {
   return (
-    <ProjectStyles autoPlay loop muted playsinline>
-      <source src={url} type='video/mp4' />
-    </ProjectStyles>
+    <LazyLoad height={200}>
+      <ProjectStyles autoPlay loop muted playsinline>
+        <source src={url} type='video/mp4' />
+      </ProjectStyles>
+    </LazyLoad>
   );
 };
 
