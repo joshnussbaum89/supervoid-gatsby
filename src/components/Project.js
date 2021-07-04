@@ -7,7 +7,7 @@ const ProjectStyles = styled.video`
   width: 100%;
 `;
 
-const Project = ({ index, type, title, url }) => {
+const Project = ({ key, type, title, url }) => {
   return (
     <LazyLoad height={200}>
       <ProjectStyles autoPlay loop muted playsinline>

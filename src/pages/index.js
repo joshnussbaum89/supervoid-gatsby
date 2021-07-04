@@ -12,7 +12,7 @@ import ProjectContainer from '../components/ProjectContainer';
 const IndexPage = () => {
   return (
     <Layout>
-      <Hero data={data} />
+      <Hero />
       <ProjectContainer data={data} />
     </Layout>
   );
