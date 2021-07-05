@@ -34,7 +34,7 @@ export const data = [
   {
     id: 3,
     type: 'project',
-    title: 'Horrendous - Decibel Magazine 200th Issue Anniversary Livestream ',
+    title: 'Horrendous',
     url: `${horrendous}`,
   },
   {
@@ -52,7 +52,7 @@ export const data = [
   {
     id: 6,
     type: 'project',
-    title: 'Working On Dying - Waiting To Die/The Madness',
+    title: 'Working On Dying',
     url: `${workingOnDying}`,
   },
   {

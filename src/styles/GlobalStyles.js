@@ -7,9 +7,11 @@ const GlobalStyles = createGlobalStyle`
         --text-primary: #f2f2f2;
         --accent-primary: #3700b3;
         --accent-secondary: #03dac5;
+        --text-background: #3600b384;
         
         ${'' /* Font Sizes */}
-        --medium: 1.5rem;
+        --small: 1.5rem;
+        --medium: 1.8rem;
         --large: 2.25rem;
         --extraLarge: 3.5rem;
     }
