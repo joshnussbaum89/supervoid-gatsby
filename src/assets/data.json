@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "type": "project",
+    "title": "The Disco Biscuits",
+    "slug": "the-disco-biscuits-live",
+    "gif": "../assets/gifs/TDBlive.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 2,
+    "type": "project",
+    "title": "DECOUPLR - Changes",
+    "slug": "decouplr-changes",
+    "gif": "../assets/gifs/music-videos-changes.mp4",
+    "url": "https://player.vimeo.com/video/502396950"
+  },
+  {
+    "id": 3,
+    "type": "project",
+    "title": "Horrendous",
+    "slug": "horrendous",
+    "gif": "../assets/gifs/horrendous.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 4,
+    "type": "project",
+    "title": "Gnarbot - Cheebot",
+    "slug": "gnarbot-cheebot",
+    "gif": "../assets/gifs/cheebot.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 5,
+    "type": "project",
+    "title": "Adroit Theory Brewing",
+    "slug": "adroit-theory-brewing",
+    "gif": "../assets/gifs/adroit.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 6,
+    "type": "project",
+    "title": "Working On Dying",
+    "slug": "working-on-dying",
+    "gif": "../assets/gifs/working-on-dying.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 7,
+    "type": "project",
+    "title": "NextFab",
+    "slug": "nextfab",
+    "gif": "../assets/gifs/nextfab.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 8,
+    "type": "project",
+    "title": "DECOUPLR - Cold Sweat",
+    "slug": "decouplr-cold-sweat",
+    "gif": "../assets/gifs/music-videos-cold-sweat.mp4",
+    "url": "https://player.vimeo.com/video/526624662"
+  },
+  {
+    "id": 9,
+    "type": "project",
+    "title": "Rover Rover",
+    "slug": "rover-rover",
+    "gif": "../assets/gifs/multicam-rover.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 10,
+    "type": "project",
+    "title": "Marshall",
+    "slug": "marshall",
+    "gif": "../assets/gifs/marshall.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 11,
+    "type": "project",
+    "title": "GRID Magazine",
+    "slug": "grid-magazine",
+    "gif": "../assets/gifs/grid.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 12,
+    "type": "project",
+    "title": "The Disco Biscuits",
+    "slug": "the-disco-biscuits",
+    "gif": "../assets/gifs/discobiscuits.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 13,
+    "type": "project",
+    "title": "Spotify Canvasas",
+    "slug": "spotify-canvasas",
+    "gif": "../assets/gifs/spotify-canvases.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 14,
+    "type": "project",
+    "title": "The Mercury Brothers",
+    "slug": "the-mercury-brothers-one",
+    "gif": "../assets/gifs/notch-mercury1.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 15,
+    "type": "project",
+    "title": "Gnarbot",
+    "slug": "gnarbot",
+    "gif": "../assets/gifs/notch-gnarbot.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 16,
+    "type": "project",
+    "title": "The Mercury Brothers",
+    "slug": "the-mercury-brothers-two",
+    "gif": "../assets/gifs/notch-mercury2.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 17,
+    "type": "project",
+    "title": "Pre-Visualization",
+    "slug": "pre-visualization-one",
+    "gif": "../assets/gifs/previz-1.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  },
+  {
+    "id": 18,
+    "type": "project",
+    "title": "Pre-Visualization",
+    "slug": "pre-visualization-two",
+    "gif": "../assets/gifs/previz-2.mp4",
+    "url": "https://player.vimeo.com/video/535068198"
+  }
+]

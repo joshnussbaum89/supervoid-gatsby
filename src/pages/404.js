@@ -1,8 +1,7 @@
 import React from 'react';
 
-// markup
 const NotFoundPage = () => {
-  return <h1>uh oh..</h1>;
+  return <h1>Uh oh.. Page not found</h1>;
 };
 
 export default NotFoundPage;

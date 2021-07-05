@@ -26,16 +26,20 @@ const ContainerStyles = styled.article`
 `;
 
 const ProjectContainer = ({ data }) => {
-  const firstSixProjects = data.filter((item) => item.id >= 1 && item.id < 7);
-  const projectsAfterBio = data.filter((item) => item.id >= 7);
+  const firstSixProjects = data.filter(
+    (item) => item.node.id >= 1 && item.node.id < 7
+  );
+  const projectsAfterBio = data.filter((item) => item.node.id >= 7);
 
   const firstProjects = firstSixProjects.map((projectItem) => {
     return (
       <Project
-        key={projectItem.id}
-        type={projectItem.type}
-        title={projectItem.title}
-        url={projectItem.url}
+        key={projectItem.node.id}
+        type={projectItem.node.type}
+        title={projectItem.node.title}
+        url={projectItem.node.url}
+        gif={projectItem.node.gif.publicURL}
+        slug={projectItem.node.slug}
       />
     );
   });
@@ -43,10 +47,12 @@ const ProjectContainer = ({ data }) => {
   const lastProjects = projectsAfterBio.map((projectItem) => {
     return (
       <Project
-        key={projectItem.id}
-        type={projectItem.type}
-        title={projectItem.title}
-        url={projectItem.url}
+        key={projectItem.node.id}
+        type={projectItem.node.type}
+        title={projectItem.node.title}
+        url={projectItem.node.url}
+        gif={projectItem.node.gif.publicURL}
+        slug={projectItem.node.slug}
       />
     );
   });

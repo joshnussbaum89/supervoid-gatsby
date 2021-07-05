@@ -1,8 +1,10 @@
-// Full-screen Supervoid promo video
 import React from 'react';
 import styled from 'styled-components';
 
-const HeroStyles = styled.div`
+// Components
+import Layout from '../components/Layout';
+
+const VideoStyles = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -14,21 +16,23 @@ const HeroStyles = styled.div`
   }
 `;
 
-const Hero = () => {
+const video = ({ pageContext }) => {
+  let { url } = pageContext;
+
   return (
-    <div id='hero'>
-      <HeroStyles>
+    <Layout>
+      <VideoStyles>
         <iframe
           title='vimeo-player'
-          src='https://player.vimeo.com/video/535068198'
+          src={`${url}`}
           frameBorder='0'
           webkitallowfullscreen='true'
           mozallowfullscreen='true'
           allowFullScreen
         ></iframe>
-      </HeroStyles>
-    </div>
+      </VideoStyles>
+    </Layout>
   );
 };
 
-export default Hero;
+export default video;

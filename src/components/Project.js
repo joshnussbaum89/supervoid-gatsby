@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Link } from 'gatsby';
 import LazyLoad from 'react-lazyload';
+import styled from 'styled-components';
 
 const VideoContainerStyles = styled.div`
   position: relative;
@@ -22,6 +23,7 @@ const VideoContainerStyles = styled.div`
     background-color: var(--text-background);
     color: var(--text-primary);
   }
+
   h4 {
     text-align: right;
   }
@@ -31,18 +33,20 @@ const VideoStyles = styled.video`
   width: 100%;
 `;
 
-const Project = ({ key, type, title, url }) => {
+const Project = ({ title, gif, slug }) => {
   return (
-    <LazyLoad height={200}>
-      <VideoContainerStyles>
-        <VideoStyles autoPlay loop muted playsinline>
-          <source src={url} type='video/mp4' />
-        </VideoStyles>
-        <div className='text-block'>
-          <h4>{title}</h4>
-        </div>
-      </VideoContainerStyles>
-    </LazyLoad>
+    <Link to={`/${slug}`}>
+      <LazyLoad height={200}>
+        <VideoContainerStyles>
+          <VideoStyles autoPlay loop muted playsinline>
+            <source src={gif} type='video/mp4' />
+          </VideoStyles>
+          <div className='text-block'>
+            <h4>{title}</h4>
+          </div>
+        </VideoContainerStyles>
+      </LazyLoad>
+    </Link>
   );
 };
 
