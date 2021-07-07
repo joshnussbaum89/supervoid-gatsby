@@ -9,17 +9,17 @@ const VideoContainerStyles = styled.div`
 
   :hover .text-block {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .text-block {
     display: none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    padding: 1rem;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--text-background);
     color: var(--text-primary);
   }

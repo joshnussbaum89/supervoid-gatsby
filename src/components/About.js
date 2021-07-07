@@ -9,10 +9,11 @@ const AboutStyles = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   height: 100vh;
-  width: 80vw;
-  margin: 0 1rem;
+  width: 80%;
+  margin: 0 auto;
   padding: 1rem;
 
   .social-icon--container {
@@ -21,12 +22,8 @@ const AboutStyles = styled.div`
   .social-icon {
     fill: var(--accent-secondary);
     font-size: var(--large);
-    margin-right: 2rem;
+    margin: 0 1.5rem;
     cursor: pointer;
-  }
-
-  @media (min-width: 768px) {
-    margin: 0 2rem;
   }
 `;
 
