@@ -22,6 +22,7 @@
     "gatsby": "^3.8.1",
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
     "gatsby-plugin-google-analytics": "^3.8.0",
+    "gatsby-plugin-open-graph-images": "^0.1.7",
     "gatsby-plugin-react-helmet": "^4.8.0",
     "gatsby-plugin-sitemap": "^4.4.0",
     "gatsby-plugin-styled-components": "^4.8.0",

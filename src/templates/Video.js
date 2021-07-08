@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // Components
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const VideoStyles = styled.div`
   width: 100%;
@@ -16,11 +17,12 @@ const VideoStyles = styled.div`
   }
 `;
 
-const video = ({ pageContext }) => {
+const Video = ({ pageContext }) => {
   let { url } = pageContext;
 
   return (
     <Layout>
+      <SEO title={`SUPERVOID STUDIO: ${pageContext.title}`} />
       <VideoStyles>
         <iframe
           title='vimeo-player'
@@ -35,4 +37,4 @@ const video = ({ pageContext }) => {
   );
 };
 
-export default video;
+export default Video;

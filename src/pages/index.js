@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import 'normalize.css';
 
 // Components
+import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import ProjectContainer from '../components/ProjectContainer';
@@ -14,6 +15,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO />
       <Hero />
       <ProjectContainer data={videoData} />
     </Layout>
