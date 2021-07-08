@@ -1,5 +1,4 @@
 const path = require(`path`);
-// const { createOpenGraphImage } = require('gatsby-plugin-open-graph-images');
 
 async function turnVideosIntoPages({ graphql, actions }) {
   const { createPage } = actions;
@@ -35,22 +34,6 @@ async function turnVideosIntoPages({ graphql, actions }) {
     });
   });
 }
-
-// async function createOGImageSeo({ actions }) {
-//   const { createPage } = actions;
-
-//   const openGraphImage = createOpenGraphImage(createPage, {
-//     path: '/og-image/joshImage.png',
-//     component: path.resolve(`src/templates/OgImage.js`),
-//     size: {
-//       width: 400,
-//       height: 50,
-//     }, // (3)
-//     context: {
-//       description: 'a image created with gatsby-plugin-open-graph-images',
-//     },
-//   });
-// }
 
 exports.createPages = async (params) => {
   await Promise.all([turnVideosIntoPages(params)]);

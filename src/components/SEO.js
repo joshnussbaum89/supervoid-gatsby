@@ -36,33 +36,35 @@ function SEO({ description, lang, meta, title }) {
           name: `keywords`,
           content: site.siteMetadata.keywords,
         },
+
+        // Open Graph data
         {
           property: `og:title`,
           content: title || site.siteMetadata.title,
-        },
-        {
-          property: `og:description`,
-          content: description || site.siteMetadata.description,
-        },
-        {
-          property: `og:type`,
-          content: `company`,
         },
         {
           property: `og:url`,
           content: `https://www.supervoid.tv`,
         },
         {
+          property: `og:type`,
+          content: `company`,
+        },
+        {
+          property: `og:description`,
+          content: description || site.siteMetadata.description,
+        },
+        {
           property: `og:image`,
+          // TODO:
+          // This needs to be changed to a valid picture
           content: `https://supervoid.tv/images/lights-bones.png`,
         },
+
+        // Twitter card
         {
           name: `twitter:card`,
           content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -71,6 +73,16 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: description || site.siteMetadata.description,
+        },
+        {
+          name: `twitter:url`,
+          content: `https://www.supervoid.tv`,
+        },
+        {
+          name: `twitter:image`,
+          // TODO:
+          // This needs to be changed to a valid picture
+          content: `https://supervoid.tv/images/lights-bones.png`,
         },
       ].concat(meta)}
     />
