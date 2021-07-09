@@ -22,7 +22,7 @@ const Video = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={`SUPERVOID STUDIO: ${pageContext.title}`} />
+      <SEO siteTitle={`SUPERVOID STUDIO: ${pageContext.title}`} />
       <VideoStyles>
         <iframe
           title='vimeo-player'

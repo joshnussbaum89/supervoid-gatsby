@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -11,8 +11,7 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            author
-            siteUrl
+            url
             keywords
             image
           }
@@ -21,31 +20,33 @@ const SEO = ({ description, lang, meta, title }) => {
     `
   );
 
+  const { title, description, url, keywords, image } = site.siteMetadata;
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title || site.siteMetadata.title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={siteTitle || title}
+      titleTemplate={`%s | ${title}`}
       meta={[
         {
           name: `description`,
-          content: description || site.siteMetadata.description,
+          content: siteDescription || description,
         },
         {
           name: `keywords`,
-          content: site.siteMetadata.keywords,
+          content: keywords,
         },
 
         // Open Graph data
         {
           property: `og:title`,
-          content: title || site.siteMetadata.title,
+          content: siteTitle || title,
         },
         {
           property: `og:url`,
-          content: `https://www.supervoid.tv`,
+          content: url,
         },
         {
           property: `og:type`,
@@ -53,13 +54,11 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:description`,
-          content: description || site.siteMetadata.description,
+          content: siteDescription || description,
         },
         {
           property: `og:image`,
-          // TODO:
-          // This needs to be changed to a valid picture
-          content: `https://supervoidgatsbymain.gatsbyjs.io${site.siteMetadata.image}`,
+          content: `${url}${image}`,
         },
 
         // Twitter card
@@ -69,21 +68,19 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:title`,
-          content: title || site.siteMetadata.title,
+          content: siteTitle || title,
         },
         {
           name: `twitter:description`,
-          content: description || site.siteMetadata.description,
+          content: siteDescription || description,
         },
         {
           name: `twitter:url`,
-          content: `https://www.supervoid.tv`,
+          content: url,
         },
         {
           name: `twitter:image`,
-          // TODO:
-          // This needs to be changed to a valid picture
-          content: `https://supervoidgatsbymain.gatsbyjs.io${site.siteMetadata.image}`,
+          content: `${url}${image}`,
         },
       ].concat(meta)}
     />
@@ -93,14 +90,14 @@ const SEO = ({ description, lang, meta, title }) => {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  siteDescription: ``,
 };
 
 SEO.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  siteTitle: PropTypes.string,
+  siteDescription: PropTypes.string,
 };
 
 export default SEO;
