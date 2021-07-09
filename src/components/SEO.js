@@ -11,7 +11,7 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
           siteMetadata {
             title
             description
-            url
+            siteUrl
             keywords
             image
           }
@@ -20,7 +20,7 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
     `
   );
 
-  const { title, description, url, keywords, image } = site.siteMetadata;
+  const { title, description, siteUrl, keywords, image } = site.siteMetadata;
 
   return (
     <Helmet
@@ -46,7 +46,7 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
         },
         {
           property: `og:url`,
-          content: url,
+          content: siteUrl,
         },
         {
           property: `og:type`,
@@ -58,7 +58,7 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
         },
         {
           property: `og:image`,
-          content: `${url}${image}`,
+          content: `${siteUrl}${image}`,
         },
 
         // Twitter card
@@ -76,11 +76,11 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
         },
         {
           name: `twitter:url`,
-          content: url,
+          content: siteUrl,
         },
         {
           name: `twitter:image`,
-          content: `${url}${image}`,
+          content: `${siteUrl}${image}`,
         },
       ].concat(meta)}
     />

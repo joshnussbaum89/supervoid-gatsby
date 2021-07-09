@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     // TODO:
     // Change to https://www.supervoid.tv before production
-    url: 'https://supervoidgatsbymain.gatsbyjs.io',
+    siteUrl: 'https://supervoidgatsbymain.gatsbyjs.io',
     title: `SUPERVOID STUDIO: Visual Design, Creative Content, Livestreaming,
     Broadcast, Visual FX`,
     author: 'Drew Mercedante',
