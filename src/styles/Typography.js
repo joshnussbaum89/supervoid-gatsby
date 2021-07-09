@@ -5,6 +5,10 @@ import '@fontsource/poppins/300.css';
 import './font.css';
 
 const Typography = createGlobalStyle`
+    body {
+        font-family: 'Bright Fate', sans-serif;
+    }
+
     h1, h2, h3 {
         margin: 1rem 0;
     }
