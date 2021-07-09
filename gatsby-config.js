@@ -1,21 +1,22 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://supervoid.tv',
+    siteUrl: 'https://www.supervoid.tv',
     title: `SUPERVOID STUDIO: Visual Design, Creative Content, Livestreaming,
     Broadcast, Visual FX`,
     author: 'Drew Mercedante',
     description:
       'Philly-native visual design team specializing in lighting, music videos, films, animation and more.',
     keywords: [
-      'lighting',
-      'music',
-      'video',
-      'concerts',
-      'film',
-      'design',
-      'animation',
-      'philadelphia',
+      'lighting ',
+      'music ',
+      'video ',
+      'concerts ',
+      'film ',
+      'design ',
+      'animation ',
+      'philadelphia ',
     ],
+    image: "/lights-bones.png"
   },
   plugins: [
     'gatsby-plugin-styled-components',

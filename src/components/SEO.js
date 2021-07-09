@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
+const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -14,6 +14,7 @@ function SEO({ description, lang, meta, title }) {
             author
             siteUrl
             keywords
+            image
           }
         }
       }
@@ -58,8 +59,7 @@ function SEO({ description, lang, meta, title }) {
           property: `og:image`,
           // TODO:
           // This needs to be changed to a valid picture
-          // content: `https://supervoid.tv/images/lights-bones.png`,
-          content: `https://supervoidgatsbymain.gatsbyjs.io/lights-bones.png`,
+          content: `https://supervoidgatsbymain.gatsbyjs.io${site.siteMetadata.image}`,
         },
 
         // Twitter card
@@ -83,12 +83,12 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:image`,
           // TODO:
           // This needs to be changed to a valid picture
-          content: `https://supervoid.tv/images/lights-bones.png`,
+          content: `https://supervoidgatsbymain.gatsbyjs.io${site.siteMetadata.image}`,
         },
       ].concat(meta)}
     />
   );
-}
+};
 
 SEO.defaultProps = {
   lang: `en`,
