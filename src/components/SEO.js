@@ -58,7 +58,8 @@ function SEO({ description, lang, meta, title }) {
           property: `og:image`,
           // TODO:
           // This needs to be changed to a valid picture
-          content: `https://supervoid.tv/images/lights-bones.png`,
+          // content: `https://supervoid.tv/images/lights-bones.png`,
+          content: `https://supervoidgatsbymain.gatsbyjs.io/src/assets/images/lights-bones.png`,
         },
 
         // Twitter card
