@@ -16,7 +16,7 @@ module.exports = {
       'animation ',
       'philadelphia ',
     ],
-    image: "/lights-bones.png"
+    image: '/lights-bones.png',
   },
   plugins: [
     'gatsby-plugin-styled-components',
