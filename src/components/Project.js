@@ -25,7 +25,8 @@ const VideoContainerStyles = styled.div`
   }
 
   h4 {
-    text-align: right;
+    text-align: center;
+    padding: 1rem;
   }
 `;
 

@@ -17,6 +17,12 @@ const VideoStyles = styled.div`
   }
 `;
 
+const ComingSoon = styled.h2`
+  font-size: var(--large);
+  text-align: center;
+  padding: 2rem 1rem;
+`;
+
 const Video = ({ pageContext }) => {
   let { url, isAvailable } = pageContext;
 
@@ -36,7 +42,7 @@ const Video = ({ pageContext }) => {
           ></iframe>
         </VideoStyles>
       ) : (
-        <h2>Coming Soon!</h2>
+        <ComingSoon>coming soon...</ComingSoon>
       )}
     </Layout>
   );
