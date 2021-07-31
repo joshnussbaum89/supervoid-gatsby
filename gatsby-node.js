@@ -14,6 +14,7 @@ async function turnVideosIntoPages({ graphql, actions }) {
             url
             id
             slug
+            isAvailable
           }
         }
       }
@@ -30,6 +31,7 @@ async function turnVideosIntoPages({ graphql, actions }) {
         url: video.node.url,
         title: video.node.title,
         slug: video.node.slug,
+        isAvailable: video.node.isAvailable,
       },
     });
   });

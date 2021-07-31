@@ -18,21 +18,26 @@ const VideoStyles = styled.div`
 `;
 
 const Video = ({ pageContext }) => {
-  let { url } = pageContext;
+  let { url, isAvailable } = pageContext;
 
   return (
     <Layout>
       <SEO siteTitle={`SUPERVOID STUDIO: ${pageContext.title}`} />
-      <VideoStyles>
-        <iframe
-          title='vimeo-player'
-          src={`${url}`}
-          frameBorder='0'
-          webkitallowfullscreen='true'
-          mozallowfullscreen='true'
-          allowFullScreen
-        ></iframe>
-      </VideoStyles>
+      {isAvailable ? (
+        <VideoStyles>
+          <iframe
+            title='video-player'
+            src={`${url}`}
+            frameBorder='0'
+            webkitallowfullscreen='true'
+            mozallowfullscreen='true'
+            allowFullScreen
+            crossOrigin='anonymous'
+          ></iframe>
+        </VideoStyles>
+      ) : (
+        <h2>Coming Soon!</h2>
+      )}
     </Layout>
   );
 };

@@ -1,8 +1,6 @@
 module.exports = {
   siteMetadata: {
-    // TODO:
-    // Change to https://www.supervoid.tv before production
-    siteUrl: 'https://supervoidgatsbymain.gatsbyjs.io',
+    siteUrl: 'https://www.supervoid.tv',
     title: `SUPERVOID STUDIO: Visual Design, Creative Content, Livestreaming,
     Broadcast, Visual FX`,
     author: 'Drew Mercedante',
@@ -18,7 +16,7 @@ module.exports = {
       ' animation',
       ' philadelphia',
     ],
-    image: '/lights-bones.png',
+    image: '/SUPERVOID-LOGO.png',
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -26,6 +24,12 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/images/SUPERVOID-LOGO.png',
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',

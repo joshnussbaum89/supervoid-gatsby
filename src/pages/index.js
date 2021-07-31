@@ -32,6 +32,7 @@ export const query = graphql`
           url
           id
           slug
+          isAvailable
           gif {
             publicURL
           }
