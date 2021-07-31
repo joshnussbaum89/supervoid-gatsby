@@ -45,7 +45,7 @@ const Project = ({ title, gif, slug }) => {
           transition={{ ease: 'easeInOut', duration: 0.5 }}
         >
           <VideoContainerStyles>
-            <VideoStyles autoPlay loop muted playsinline>
+            <VideoStyles autoPlay loop muted playsInline>
               <source src={gif} type='video/mp4' />
             </VideoStyles>
             <div className='text-block'>

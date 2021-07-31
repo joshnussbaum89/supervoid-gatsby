@@ -75,7 +75,7 @@ const About = () => {
         transition={{ ease: 'easeInOut', duration: 0.5 }}
       >
         <div>
-          <VideoStyles autoPlay loop muted playsinline>
+          <VideoStyles autoPlay loop muted playsInline>
             <source src={SupervoidBio} type='video/mp4' />
           </VideoStyles>
         </div>
