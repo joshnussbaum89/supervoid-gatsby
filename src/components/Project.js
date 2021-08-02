@@ -8,12 +8,6 @@ const VideoContainerStyles = styled.div`
   position: relative;
   cursor: pointer;
 
-  :hover .text-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .text-block {
     display: none;
     position: absolute;
@@ -25,9 +19,17 @@ const VideoContainerStyles = styled.div`
     color: var(--text-primary);
   }
 
-  h4 {
+  h3 {
     text-align: center;
     padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    :hover .text-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 
@@ -49,7 +51,7 @@ const Project = ({ title, gif, slug }) => {
               <source src={gif} type='video/mp4' />
             </VideoStyles>
             <div className='text-block'>
-              <h4>{title}</h4>
+              <h3>{title}</h3>
             </div>
           </VideoContainerStyles>
         </motion.section>

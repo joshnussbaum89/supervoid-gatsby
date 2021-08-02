@@ -13,21 +13,29 @@ const Typography = createGlobalStyle`
         margin: 1rem 0;
     }
 
-    h1, h2 {
+    h1 {
         font-size: var(--extraLarge);
+    }
+
+    h2 {
+        font-size: var(--large);
+        text-transform: uppercase;
+        margin: 2rem;
     }
     
     h3 {
-        font-size: var(--large);
-    }
-
-    h4 {
         font-size: var(--medium);
         margin: 0;
     }
      
     p {
         font-size: var(--small);
+    }
+
+    @media (min-width: 768px) {
+        h2 {
+            font-size: var(--extraLarge);
+        }
     }
 `;
 

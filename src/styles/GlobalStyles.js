@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         background: var(--bg-primary);
         color: var(--text-primary);
+        scroll-behavior: smooth;
     }
 `;
 

@@ -9,6 +9,7 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import ProjectContainer from '../components/ProjectContainer';
+import Footer from '../components/Footer';
 
 const IndexPage = ({ data }) => {
   const videoData = data.allDataJson.edges;
@@ -18,6 +19,7 @@ const IndexPage = ({ data }) => {
       <SEO />
       <Hero />
       <ProjectContainer data={videoData} />
+      <Footer />
     </Layout>
   );
 };
