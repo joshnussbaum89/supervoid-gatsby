@@ -122,31 +122,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-  /* <StaticImage
-              src='../assets/images/SUPERVOID-LOGO.png'
-              alt='Supervoid Logo'
-              title='Supervoid'
-              className='supervoid-logo'
-            /> */
-}
-
-{
-  /* <LazyLoad height={200}>
-        <motion.section
-          style={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: 'easeInOut', duration: 0.5 }}
-        >
-          <AboutStyles id='about'>
-            <h2>About</h2>
-            <p>
-              SUPERVOID is a visual design team that creates surreal mixed media
-              content and directs videos for artists and brands looking to stand
-              out on stage and on screen.
-            </p>
-          </AboutStyles>
-        </motion.section>
-      </LazyLoad> */
-}

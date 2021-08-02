@@ -14,13 +14,15 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
             siteUrl
             keywords
             image
+            author
           }
         }
       }
     `
   );
 
-  const { title, description, siteUrl, keywords, image } = site.siteMetadata;
+  const { title, description, siteUrl, keywords, image, author } =
+    site.siteMetadata;
 
   return (
     <Helmet
@@ -65,6 +67,10 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
         {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          name: `twitter:creator`,
+          content: author,
         },
         {
           name: `twitter:title`,

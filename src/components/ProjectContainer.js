@@ -26,7 +26,6 @@ const ContainerStyles = styled.article`
 `;
 
 const ProjectContainer = ({ data }) => {
-  console.log(data);
   const firstSixProjects = data.filter(
     (item) => item.node.id >= 1 && item.node.id < 7
   );
