@@ -11,7 +11,7 @@
   {
     "id": 2,
     "type": "project",
-    "title": "Tom Morello Tour",
+    "title": "Tom Morello",
     "slug": "tom-morello",
     "gif": "../assets/gifs/tom-morello.mp4",
     "url": "https://www.youtube.com/embed/smBwO5JwAUw",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "type": "project",
-    "title": "Horrendous (multicam)",
+    "title": "Horrendous",
     "slug": "horrendous",
     "gif": "../assets/gifs/horrendous.mp4",
     "url": "https://www.youtube.com/embed/OMhS9pq7ywk?start=9254",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "type": "project",
-    "title": "Decouplr - Changes (music videos)",
+    "title": "Decouplr - Changes",
     "slug": "decouplr-changes",
     "gif": "../assets/gifs/music-videos-changes.mp4",
     "url": "https://www.youtube.com/embed/3JNg-nSgf74",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "type": "project",
-    "title": "Bones UK Tour",
+    "title": "Bones UK",
     "slug": "bones",
     "gif": "../assets/gifs/bones.mp4",
     "url": "https://www.youtube.com/embed/GQod8zkHPSc",

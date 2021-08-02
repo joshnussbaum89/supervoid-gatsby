@@ -16,7 +16,7 @@ module.exports = {
       ' animation',
       ' philadelphia',
     ],
-    image: '/SUPERVOID-LOGO.png',
+    image: '/SUPERVOID-FAVICON.png',
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/assets/images/SUPERVOID-LOGO.png',
+        icon: 'src/assets/images/SUPERVOID-FAVICON.png',
       },
     },
     'gatsby-plugin-image',

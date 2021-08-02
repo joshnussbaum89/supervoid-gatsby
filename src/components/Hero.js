@@ -1,4 +1,3 @@
-// Full-screen Supervoid promo video
 import React from 'react';
 import styled from 'styled-components';
 
@@ -10,7 +9,6 @@ const HeroStyles = styled.div`
   iframe {
     width: 100vw;
     height: 56.25vw;
-    min-height: 100vh;
   }
 `;
 

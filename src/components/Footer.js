@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import styled from 'styled-components';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import LazyLoad from 'react-lazyload';
 import { motion } from 'framer-motion';
 
 const FooterContainerStyles = styled.footer`
@@ -46,8 +46,8 @@ const FooterStyles = styled.div`
 
   .supervoid-logo {
     position: absolute;
-    opacity: 0.5;
     z-index: 100;
+    opacity: 0.5;
     right: 25px;
     bottom: 0px;
     width: 75px;

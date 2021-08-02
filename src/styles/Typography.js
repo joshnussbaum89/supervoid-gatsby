@@ -36,6 +36,15 @@ const Typography = createGlobalStyle`
         h2 {
             font-size: var(--extraLarge);
         }
+        h3 {
+            font-size: var(--large);
+        }
+    }
+
+    @media (min-width: 1500px) {
+        h3 {
+        font-size: var(--extraLarge);
+    }
     }
 `;
 
