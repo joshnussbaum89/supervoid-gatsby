@@ -59,9 +59,9 @@ const ProjectContainer = ({ data }) => {
 
   return (
     <ContainerStyles id='projects'>
-      <div className='project-grid'>{firstProjects}</div>
+      <section className='project-grid'>{firstProjects}</section>
       <About />
-      <div className='project-grid'>{lastProjects}</div>
+      <section className='project-grid'>{lastProjects}</section>
     </ContainerStyles>
   );
 };

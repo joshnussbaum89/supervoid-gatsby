@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeroStyles = styled.div`
+const HeroStyles = styled.article`
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -14,18 +14,16 @@ const HeroStyles = styled.div`
 
 const Hero = () => {
   return (
-    <div id='hero'>
-      <HeroStyles>
-        <iframe
-          title='vimeo-player'
-          src='https://player.vimeo.com/video/584075790'
-          frameBorder='0'
-          webkitallowfullscreen='true'
-          mozallowfullscreen='true'
-          allowFullScreen
-        ></iframe>
-      </HeroStyles>
-    </div>
+    <HeroStyles id='hero'>
+      <iframe
+        title='vimeo-player'
+        src='https://player.vimeo.com/video/584075790'
+        frameBorder='0'
+        webkitallowfullscreen='true'
+        mozallowfullscreen='true'
+        allowFullScreen
+      ></iframe>
+    </HeroStyles>
   );
 };
 
