@@ -30,7 +30,7 @@ const SEO = ({ siteDescription, lang, meta, siteTitle }) => {
         lang,
       }}
       title={siteTitle || title}
-      titleTemplate={`%s | ${title}`}
+      titleTemplate={siteTitle || title}
       meta={[
         {
           name: `description`,
