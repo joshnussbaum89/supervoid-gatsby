@@ -28,7 +28,7 @@ const Video = ({ pageContext }) => {
 
   return (
     <Layout>
-      <SEO siteTitle={`SUPERVOID STUDIO: ${pageContext.title}`} />
+      <SEO siteTitle={`SUPERVOID TV: ${pageContext.title}`} />
       {isAvailable ? (
         <VideoStyles>
           <iframe

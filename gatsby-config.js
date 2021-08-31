@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.supervoid.tv',
-    title: `SUPERVOID STUDIO: Visual Design, Creative Content, Livestreaming,
+    title: `SUPERVOID TV: Visual Design, Creative Content, Livestreaming,
     Broadcast, Visual FX`,
     author: 'Drew Mercedante',
     description:
-      'Philly-native visual design team specializing in lighting, music videos, films, animation and more.',
+      'Philadelphia visual design team specializing in lighting, music videos, films, animation and more.',
     keywords: [
       'lighting',
       ' music',

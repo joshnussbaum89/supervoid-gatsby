@@ -96,15 +96,15 @@ const Footer = () => {
                 <MailOutlineIcon className='social-icon' />
                 <span>daemon@supervoid.tv</span>
               </Link>
-              <Link
-                to='https://www.instagram.com/supervoidstudio/'
+              <a
+                href='https://www.instagram.com/supervoidstudio/'
                 target='_blank'
                 rel='noopener noferrer'
                 className='social-info'
               >
                 <InstagramIcon className='social-icon' />
-                <span>@supervoidstudio</span>
-              </Link>
+                <span>@supervoidtv</span>
+              </a>
             </div>
             <Link to='/'>
               <StaticImage
