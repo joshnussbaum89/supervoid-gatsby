@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 const FooterContainerStyles = styled.footer`
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 `;
 
 const FooterStyles = styled.div`
