@@ -97,7 +97,7 @@ const Footer = () => {
                 <span>daemon@supervoid.tv</span>
               </Link>
               <a
-                href='https://www.instagram.com/supervoidstudio/'
+                href='https://www.instagram.com/supervoidtv/'
                 target='_blank'
                 rel='noopener noferrer'
                 className='social-info'
