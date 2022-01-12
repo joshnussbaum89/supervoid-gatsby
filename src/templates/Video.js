@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 // Components
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const VideoStyles = styled.div`
   width: 100%;
@@ -15,16 +15,16 @@ const VideoStyles = styled.div`
     height: 56.25vw;
     min-height: 100vh;
   }
-`;
+`
 
 const ComingSoon = styled.h2`
   font-size: var(--large);
   text-align: center;
   padding: 2rem 1rem;
-`;
+`
 
 const Video = ({ pageContext }) => {
-  let { url, isAvailable } = pageContext;
+  let { url, isAvailable } = pageContext
 
   return (
     <Layout>
@@ -45,7 +45,7 @@ const Video = ({ pageContext }) => {
         <ComingSoon>coming soon...</ComingSoon>
       )}
     </Layout>
-  );
-};
+  )
+}
 
-export default Video;
+export default Video

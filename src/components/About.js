@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import SupervoidBio from '../assets/gifs/SUPERVOID-BIO.mp4';
-import LazyLoad from 'react-lazyload';
-import { motion } from 'framer-motion';
+import React from 'react'
+import styled from 'styled-components'
+import SupervoidBio from '../assets/gifs/SUPERVOID-BIO.mp4'
+import LazyLoad from 'react-lazyload'
+import { motion } from 'framer-motion'
 
 const VideoStyles = styled.video`
   width: 100%;
   height: 100%;
-`;
+`
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
         </VideoStyles>
       </motion.section>
     </LazyLoad>
-  );
-};
+  )
+}
 
-export default About;
+export default About

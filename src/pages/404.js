@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
 // Components
-import Layout from '../components/Layout';
+import Layout from '../components/Layout'
 
 const NotFoundPageStyles = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ const NotFoundPageStyles = styled.div`
     background: var(--accent-secondary);
     color: var(--bg-primary);
   }
-`;
+`
 
 const NotFoundPage = () => {
   return (
@@ -44,7 +44,7 @@ const NotFoundPage = () => {
         </Link>
       </NotFoundPageStyles>
     </Layout>
-  );
-};
+  )
+}
 
-export default NotFoundPage;
+export default NotFoundPage

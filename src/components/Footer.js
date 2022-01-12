@@ -1,17 +1,17 @@
-import React from 'react';
-import LazyLoad from 'react-lazyload';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import { motion } from 'framer-motion';
+import React from 'react'
+import LazyLoad from 'react-lazyload'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+import styled from 'styled-components'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
+import { motion } from 'framer-motion'
 
 const FooterContainerStyles = styled.footer`
   position: relative;
   height: 100vh;
   width: 100%;
-`;
+`
 
 const FooterStyles = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ const FooterStyles = styled.div`
       width: 125px;
     }
   }
-`;
+`
 
 const Footer = () => {
   return (
@@ -86,8 +86,8 @@ const Footer = () => {
               <Link
                 to='/'
                 onClick={(e) => {
-                  window.location = 'mailto: daemon@supervoid.tv';
-                  e.preventDefault();
+                  window.location = 'mailto: daemon@supervoid.tv'
+                  e.preventDefault()
                 }}
                 target='_blank'
                 rel='noopener noreferrer'
@@ -97,7 +97,7 @@ const Footer = () => {
                 <span>daemon@supervoid.tv</span>
               </Link>
               <a
-                href='https://www.instagram.com/supervoidstudio/'
+                href='https://www.instagram.com/supervoidtv/'
                 target='_blank'
                 rel='noopener noferrer'
                 className='social-info'
@@ -118,7 +118,7 @@ const Footer = () => {
         </FooterContainerStyles>
       </motion.section>
     </LazyLoad>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

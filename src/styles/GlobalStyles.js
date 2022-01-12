@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
     :root {
@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
         --accent-primary: #3700b3;
         --accent-secondary: #03dac5;
         --text-background: #3600b384;
-        
+
         ${'' /* Font Sizes */}
         --small: 1.5rem;
         --medium: 1.8rem;
@@ -21,6 +21,6 @@ const GlobalStyles = createGlobalStyle`
         color: var(--text-primary);
         scroll-behavior: smooth;
     }
-`;
+`
 
-export default GlobalStyles;
+export default GlobalStyles

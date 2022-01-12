@@ -1,8 +1,8 @@
-const path = require(`path`);
+const path = require(`path`)
 
 async function turnVideosIntoPages({ graphql, actions }) {
-  const { createPage } = actions;
-  const videoPageTemplate = path.resolve(`src/templates/Video.js`);
+  const { createPage } = actions
+  const videoPageTemplate = path.resolve(`src/templates/Video.js`)
 
   const { data } = await graphql(`
     query {
@@ -19,7 +19,7 @@ async function turnVideosIntoPages({ graphql, actions }) {
         }
       }
     }
-  `);
+  `)
 
   data.allDataJson.edges.forEach((video) => {
     createPage({
@@ -33,10 +33,10 @@ async function turnVideosIntoPages({ graphql, actions }) {
         slug: video.node.slug,
         isAvailable: video.node.isAvailable,
       },
-    });
-  });
+    })
+  })
 }
 
 exports.createPages = async (params) => {
-  await Promise.all([turnVideosIntoPages(params)]);
-};
+  await Promise.all([turnVideosIntoPages(params)])
+}

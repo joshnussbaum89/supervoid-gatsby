@@ -48,4 +48,4 @@ module.exports = {
       __key: 'supervoidAssets',
     },
   ],
-};
+}
