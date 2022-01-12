@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const HeroStyles = styled.article`
   width: 100%;
@@ -10,7 +10,7 @@ const HeroStyles = styled.article`
     width: 100vw;
     height: 56.25vw;
   }
-`;
+`
 
 const Hero = () => {
   return (
@@ -24,7 +24,7 @@ const Hero = () => {
         allowFullScreen
       ></iframe>
     </HeroStyles>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

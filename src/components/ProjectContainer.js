@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 // Components
-import Project from './Project';
-import About from './About';
+import Project from './Project'
+import About from './About'
 
 const ContainerStyles = styled.article`
   font-size: 0;
@@ -23,13 +23,13 @@ const ContainerStyles = styled.article`
       grid-template-columns: 1fr 1fr;
     }
   }
-`;
+`
 
 const ProjectContainer = ({ data }) => {
   const firstSixProjects = data.filter(
     (item) => item.node.id >= 1 && item.node.id < 7
-  );
-  const projectsAfterBio = data.filter((item) => item.node.id >= 7);
+  )
+  const projectsAfterBio = data.filter((item) => item.node.id >= 7)
 
   const firstProjects = firstSixProjects.map((projectItem) => {
     return (
@@ -41,8 +41,8 @@ const ProjectContainer = ({ data }) => {
         gif={projectItem.node.gif.publicURL}
         slug={projectItem.node.slug}
       />
-    );
-  });
+    )
+  })
 
   const lastProjects = projectsAfterBio.map((projectItem) => {
     return (
@@ -54,8 +54,8 @@ const ProjectContainer = ({ data }) => {
         gif={projectItem.node.gif.publicURL}
         slug={projectItem.node.slug}
       />
-    );
-  });
+    )
+  })
 
   return (
     <ContainerStyles id='projects'>
@@ -63,7 +63,7 @@ const ProjectContainer = ({ data }) => {
       <About />
       <section className='project-grid'>{lastProjects}</section>
     </ContainerStyles>
-  );
-};
+  )
+}
 
-export default ProjectContainer;
+export default ProjectContainer

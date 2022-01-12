@@ -1,18 +1,18 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from 'react'
+import { graphql } from 'gatsby'
 
 // Styles
-import 'normalize.css';
+import 'normalize.css'
 
 // Components
-import SEO from '../components/SEO';
-import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import ProjectContainer from '../components/ProjectContainer';
-import Footer from '../components/Footer';
+import SEO from '../components/SEO'
+import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import ProjectContainer from '../components/ProjectContainer'
+import Footer from '../components/Footer'
 
 const IndexPage = ({ data }) => {
-  const videoData = data.allDataJson.edges;
+  const videoData = data.allDataJson.edges
 
   return (
     <Layout>
@@ -21,8 +21,8 @@ const IndexPage = ({ data }) => {
       <ProjectContainer data={videoData} />
       <Footer />
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query MyQuery {
@@ -42,6 +42,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default IndexPage;
+export default IndexPage

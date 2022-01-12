@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
-import '@fontsource/poppins/100.css';
-import '@fontsource/poppins/200.css';
-import '@fontsource/poppins/300.css';
-import './font.css';
+import { createGlobalStyle } from 'styled-components'
+import '@fontsource/poppins/100.css'
+import '@fontsource/poppins/200.css'
+import '@fontsource/poppins/300.css'
+import './font.css'
 
 const Typography = createGlobalStyle`
     body {
@@ -22,12 +22,12 @@ const Typography = createGlobalStyle`
         text-transform: uppercase;
         margin: 2rem;
     }
-    
+
     h3 {
         font-size: var(--medium);
         margin: 0;
     }
-     
+
     p {
         font-size: var(--small);
     }
@@ -46,6 +46,6 @@ const Typography = createGlobalStyle`
         font-size: var(--extraLarge);
     }
     }
-`;
+`
 
-export default Typography;
+export default Typography

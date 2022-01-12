@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import LazyLoad from 'react-lazyload';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import React from 'react'
+import { Link } from 'gatsby'
+import LazyLoad from 'react-lazyload'
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 const VideoContainerStyles = styled.div`
   position: relative;
@@ -31,11 +31,11 @@ const VideoContainerStyles = styled.div`
       justify-content: center;
     }
   }
-`;
+`
 
 const VideoStyles = styled.video`
   width: 100%;
-`;
+`
 
 const Project = ({ title, gif, slug }) => {
   return (
@@ -57,7 +57,7 @@ const Project = ({ title, gif, slug }) => {
         </motion.section>
       </LazyLoad>
     </Link>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project
