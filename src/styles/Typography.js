@@ -1,7 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import '@fontsource/poppins/100.css'
-import '@fontsource/poppins/200.css'
-import '@fontsource/poppins/300.css'
 import './font.css'
 
 const Typography = createGlobalStyle`
