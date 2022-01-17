@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import LazyLoad from 'react-lazyload'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -40,22 +39,20 @@ const VideoStyles = styled.video`
 const Project = ({ title, gif, slug }) => {
   return (
     <Link to={`/${slug}`}>
-      <LazyLoad height={200}>
-        <motion.section
-          style={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: 'easeInOut', duration: 0.5 }}
-        >
-          <VideoContainerStyles>
-            <VideoStyles autoPlay loop muted playsInline>
-              <source src={gif} type='video/mp4' />
-            </VideoStyles>
-            <div className='text-block'>
-              <h3>{title}</h3>
-            </div>
-          </VideoContainerStyles>
-        </motion.section>
-      </LazyLoad>
+      <motion.section
+        style={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeInOut', duration: 0.5 }}
+      >
+        <VideoContainerStyles>
+          <VideoStyles autoPlay loop muted playsInline>
+            <source src={gif} type='video/mp4' />
+          </VideoStyles>
+          <div className='text-block'>
+            <h3>{title}</h3>
+          </div>
+        </VideoContainerStyles>
+      </motion.section>
     </Link>
   )
 }

@@ -14,8 +14,10 @@ const GlobalStyles = createGlobalStyle`
         --medium: 1.8rem;
         --large: 2.25rem;
         --extraLarge: 3.5rem;
+        --titleLarge: 5.5rem;
     }
 
+    html,
     body {
         background: var(--bg-primary);
         color: var(--text-primary);

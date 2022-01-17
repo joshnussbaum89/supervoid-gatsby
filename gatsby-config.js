@@ -24,6 +24,7 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-smoothscroll',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

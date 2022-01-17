@@ -15,12 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/poppins": "^4.4.5",
+    "@fontsource/montserrat": "^4.5.2",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "babel-plugin-styled-components": "^1.13.1",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.8.1",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
     "gatsby-plugin-google-analytics": "^3.8.0",
     "gatsby-plugin-image": "^1.9.0",
@@ -29,6 +30,7 @@
     "gatsby-plugin-react-helmet": "^4.8.0",
     "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-plugin-sitemap": "^4.4.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^4.8.0",
     "gatsby-source-filesystem": "^3.9.0",
     "gatsby-transformer-json": "^3.8.0",

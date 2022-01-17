@@ -1,0 +1,44 @@
+1. create video modal for "watch promo" CTA
+2. remove gatsby-node logic for displaying other pages
+3. build navigation and hero section
+     - full screen background image
+     - navigation
+     - two CTA's --> "Browse Gallery" (scrolls to gallery section) + "Watch Promo" (opens promo video)
+4. add new gifs
+5. build modal pop-up
+     - 1 column width for mobile + desktop
+     - GIF on top, then title/date/description etc.
+     - overflow: auto/scroll to keep container width and height consistent
+6. add image carousel to modal popup --> add images[] to data.json
+
+
+
+========== OLD HERO SECTION ==========
+
+const HeroStyles = styled.article`
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  iframe {
+    width: 100vw;
+    height: 56.25vw;
+  }
+`
+
+const Hero = () => {
+  return (
+    <HeroStyles id='hero'>
+      <iframe
+        title='vimeo-player'
+        src='https://player.vimeo.com/video/584075790'
+        frameBorder='0'
+        webkitallowfullscreen='true'
+        mozallowfullscreen='true'
+        allowFullScreen
+      ></iframe>
+    </HeroStyles>
+  )
+}
+
+export default Hero

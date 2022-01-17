@@ -6,6 +6,7 @@ import Project from './Project'
 import About from './About'
 
 const ContainerStyles = styled.article`
+  padding-top: 1rem;
   font-size: 0;
 
   h2 {
@@ -58,7 +59,8 @@ const ProjectContainer = ({ data }) => {
   })
 
   return (
-    <ContainerStyles id='projects'>
+    <ContainerStyles id='gallery'>
+      <h2>Gallery</h2>
       <section className='project-grid'>{firstProjects}</section>
       <About />
       <section className='project-grid'>{lastProjects}</section>

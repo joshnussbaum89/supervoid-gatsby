@@ -1,5 +1,4 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
@@ -68,56 +67,54 @@ const FooterStyles = styled.div`
 
 const Footer = () => {
   return (
-    <LazyLoad height={200}>
-      <motion.section
-        style={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: 'easeInOut', duration: 0.5 }}
-      >
-        <FooterContainerStyles>
-          <FooterStyles>
-            <h2 className='contact-header'>Info & Contact</h2>
-            <p>
-              SUPERVOID is a visual design team that creates surreal mixed media
-              content and directs videos for artists and brands looking to stand
-              out on stage and on screen.
-            </p>
-            <div>
-              <Link
-                to='/'
-                onClick={(e) => {
-                  window.location = 'mailto: daemon@supervoid.tv'
-                  e.preventDefault()
-                }}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='social-info'
-              >
-                <MailOutlineIcon className='social-icon' />
-                <span>daemon@supervoid.tv</span>
-              </Link>
-              <a
-                href='https://www.instagram.com/supervoidtv/'
-                target='_blank'
-                rel='noopener noferrer'
-                className='social-info'
-              >
-                <InstagramIcon className='social-icon' />
-                <span>@supervoidtv</span>
-              </a>
-            </div>
-            <Link to='/'>
-              <StaticImage
-                src='../assets/images/SUPERVOID-LOGO.png'
-                alt='Supervoid Logo'
-                title='Supervoid'
-                className='supervoid-logo'
-              />
+    <motion.section
+      style={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.5 }}
+    >
+      <FooterContainerStyles id='contact'>
+        <FooterStyles>
+          <h2 className='contact-header'>Info & Contact</h2>
+          <p>
+            SUPERVOID is a visual design team that creates surreal mixed media
+            content and directs videos for artists and brands looking to stand
+            out on stage and on screen.
+          </p>
+          <div>
+            <Link
+              to='/'
+              onClick={(e) => {
+                window.location = 'mailto: daemon@supervoid.tv'
+                e.preventDefault()
+              }}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='social-info'
+            >
+              <MailOutlineIcon className='social-icon' />
+              <span>daemon@supervoid.tv</span>
             </Link>
-          </FooterStyles>
-        </FooterContainerStyles>
-      </motion.section>
-    </LazyLoad>
+            <a
+              href='https://www.instagram.com/supervoidtv/'
+              target='_blank'
+              rel='noopener noferrer'
+              className='social-info'
+            >
+              <InstagramIcon className='social-icon' />
+              <span>@supervoidtv</span>
+            </a>
+          </div>
+          <Link to='/'>
+            <StaticImage
+              src='../assets/images/SUPERVOID-LOGO.png'
+              alt='Supervoid Logo'
+              title='Supervoid'
+              className='supervoid-logo'
+            />
+          </Link>
+        </FooterStyles>
+      </FooterContainerStyles>
+    </motion.section>
   )
 }
 
