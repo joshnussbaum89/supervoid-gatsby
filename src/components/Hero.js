@@ -12,7 +12,7 @@ const HeroStyles = styled.article`
   }
 `
 
-// TODO: add fixed nav
+// TODO: add fixed navigation
 
 const Hero = () => {
   return (
