@@ -12,6 +12,8 @@ const HeroStyles = styled.article`
   }
 `
 
+// TODO: add fixed nav
+
 const Hero = () => {
   return (
     <HeroStyles id='hero'>
